@@ -12,11 +12,13 @@
 					<xr:Abs>Picture.png</xr:Abs>
 					<xr:LoadTransparent>false</xr:LoadTransparent>
 				</Picture>
+				<ShapeRepresentation>WhenActive</ShapeRepresentation>
 				<ExtendedTooltip name="КомандаВыходРасширеннаяПодсказка" id="44"/>
 			</Button>
 			<Button name="КомандаЗапуститьОтИмениПользователя" id="122">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.КомандаЗапуститьОтИмениПользователя</CommandName>
+				<ShapeRepresentation>WhenActive</ShapeRepresentation>
 				<ExtendedTooltip name="КомандаЗапуститьОтИмениПользователяРасширеннаяПодсказка" id="123"/>
 			</Button>
 		</ChildItems>

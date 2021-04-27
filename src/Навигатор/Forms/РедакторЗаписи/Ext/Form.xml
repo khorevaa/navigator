@@ -12,6 +12,7 @@
 					<xr:Abs>Picture.png</xr:Abs>
 					<xr:LoadTransparent>false</xr:LoadTransparent>
 				</Picture>
+				<ShapeRepresentation>WhenActive</ShapeRepresentation>
 				<ExtendedTooltip name="КомандаВыходРасширеннаяПодсказка" id="21"/>
 			</Button>
 			<Button name="КомандаЗаписатьИзменения" id="34">
@@ -22,6 +23,7 @@
 					<xr:Ref>StdPicture.Write</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<ShapeRepresentation>WhenActive</ShapeRepresentation>
 				<ExtendedTooltip name="КомандаЗаписатьИзмененияРасширеннаяПодсказка" id="35"/>
 			</Button>
 			<Button name="КомандаУдалитьЗапись" id="36">
@@ -31,132 +33,354 @@
 					<xr:Abs>Picture.png</xr:Abs>
 					<xr:LoadTransparent>false</xr:LoadTransparent>
 				</Picture>
+				<ShapeRepresentation>WhenActive</ShapeRepresentation>
 				<ExtendedTooltip name="КомандаУдалитьЗаписьРасширеннаяПодсказка" id="37"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<Table name="ДанныеЗаписи" id="1">
-			<Representation>Tree</Representation>
-			<CommandBarLocation>None</CommandBarLocation>
-			<ChangeRowSet>false</ChangeRowSet>
-			<FileDragMode>AsFile</FileDragMode>
-			<DataPath>ДанныеЗаписи</DataPath>
-			<RowPictureDataPath>ДанныеЗаписи.ИндексКартинки</RowPictureDataPath>
-			<RowsPicture>
-				<xr:Abs>RowsPicture.png</xr:Abs>
-				<xr:LoadTransparent>false</xr:LoadTransparent>
-			</RowsPicture>
-			<ContextMenu name="ДанныеЗаписиКонтекстноеМеню" id="3"/>
-			<AutoCommandBar name="ДанныеЗаписиКоманднаяПанель" id="2"/>
-			<ExtendedTooltip name="ДанныеЗаписиРасширеннаяПодсказка" id="4"/>
-			<SearchStringAddition name="ДанныеЗаписиСтрокаПоиска" id="5">
-				<AdditionSource>
-					<Item>ДанныеЗаписи</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ДанныеЗаписиСтрокаПоискаКонтекстноеМеню" id="6"/>
-				<ExtendedTooltip name="ДанныеЗаписиСтрокаПоискаРасширеннаяПодсказка" id="7"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="ДанныеЗаписиСостояниеПросмотра" id="11">
-				<AdditionSource>
-					<Item>ДанныеЗаписи</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ДанныеЗаписиСостояниеПросмотраКонтекстноеМеню" id="12"/>
-				<ExtendedTooltip name="ДанныеЗаписиСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="ДанныеЗаписиУправлениеПоиском" id="8">
-				<AdditionSource>
-					<Item>ДанныеЗаписи</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="ДанныеЗаписиУправлениеПоискомКонтекстноеМеню" id="9"/>
-				<ExtendedTooltip name="ДанныеЗаписиУправлениеПоискомРасширеннаяПодсказка" id="10"/>
-			</SearchControlAddition>
-			<Events>
-				<Event name="Selection">ДанныеЗаписиВыбор</Event>
-			</Events>
+		<UsualGroup name="ГруппаВсеКартинки" id="41">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа все картинки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа все картинки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВсеКартинкиРасширеннаяПодсказка" id="42"/>
 			<ChildItems>
-				<InputField name="ДанныеЗаписиИмяРеквизита" id="14">
-					<DataPath>ДанныеЗаписи.ИмяРеквизита</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
+				<PictureDecoration name="КартинкаУспешно32" id="43">
+					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Имя</v8:content>
+							<v8:content>Картинка успешно32</v8:content>
 						</v8:item>
 					</Title>
-					<ContextMenu name="ДанныеЗаписиИмяРеквизитаКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="ДанныеЗаписиИмяРеквизитаРасширеннаяПодсказка" id="16"/>
-				</InputField>
-				<InputField name="ДанныеЗаписиЗначениеРеквизита" id="17">
-					<DataPath>ДанныеЗаписи.ЗначениеРеквизита</DataPath>
-					<Title>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="КартинкаУспешно32КонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="КартинкаУспешно32РасширеннаяПодсказка" id="45"/>
+				</PictureDecoration>
+				<PictureDecoration name="КартинкаОшибка32" id="46">
+					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Значение</v8:content>
+							<v8:content>Картинка ошибка32</v8:content>
 						</v8:item>
 					</Title>
-					<ChooseType>false</ChooseType>
-					<BackColor>web:LightYellow</BackColor>
-					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-					<ContextMenu name="ДанныеЗаписиЗначениеРеквизитаКонтекстноеМеню" id="18"/>
-					<ExtendedTooltip name="ДанныеЗаписиЗначениеРеквизитаРасширеннаяПодсказка" id="19"/>
-					<Events>
-						<Event name="OnChange">ДанныеЗаписиЗначениеРеквизитаПриИзменении</Event>
-					</Events>
-				</InputField>
-				<InputField name="ДанныеЗаписиПредставлениеТипа" id="31">
-					<DataPath>ДанныеЗаписи.ПредставлениеТипа</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Тип</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<TextColor>web:MidnightBlue</TextColor>
-					<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
-					<ContextMenu name="ДанныеЗаписиПредставлениеТипаКонтекстноеМеню" id="32"/>
-					<ExtendedTooltip name="ДанныеЗаписиПредставлениеТипаРасширеннаяПодсказка" id="33"/>
-				</InputField>
-				<InputField name="ДанныеЗаписиСинонимРеквизита" id="25">
-					<DataPath>ДанныеЗаписи.СинонимРеквизита</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Синоним</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
-					<ContextMenu name="ДанныеЗаписиСинонимРеквизитаКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="ДанныеЗаписиСинонимРеквизитаРасширеннаяПодсказка" id="27"/>
-				</InputField>
-				<InputField name="ДанныеЗаписиКомментарийРеквизита" id="28">
-					<DataPath>ДанныеЗаписи.КомментарийРеквизита</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Комментарий</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<TextColor>web:MediumGray</TextColor>
-					<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
-					<ContextMenu name="ДанныеЗаписиКомментарийРеквизитаКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="ДанныеЗаписиКомментарийРеквизитаРасширеннаяПодсказка" id="30"/>
-				</InputField>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="КартинкаОшибка32КонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="КартинкаОшибка32РасширеннаяПодсказка" id="48"/>
+				</PictureDecoration>
 			</ChildItems>
-		</Table>
+		</UsualGroup>
+		<Pages name="СтраницыФормы" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыФормыРасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<Page name="СтраницаЗапись" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запись</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница запись</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаЗаписьРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<Table name="ДанныеЗаписи" id="1">
+							<Representation>Tree</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ДанныеЗаписи</DataPath>
+							<RowPictureDataPath>ДанныеЗаписи.ИндексКартинки</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Abs>RowsPicture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<ContextMenu name="ДанныеЗаписиКонтекстноеМеню" id="3"/>
+							<AutoCommandBar name="ДанныеЗаписиКоманднаяПанель" id="2"/>
+							<ExtendedTooltip name="ДанныеЗаписиРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ДанныеЗаписиСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>ДанныеЗаписи</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеЗаписиСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ДанныеЗаписиСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДанныеЗаписиСостояниеПросмотра" id="11">
+								<AdditionSource>
+									<Item>ДанныеЗаписи</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеЗаписиСостояниеПросмотраКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ДанныеЗаписиСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДанныеЗаписиУправлениеПоиском" id="8">
+								<AdditionSource>
+									<Item>ДанныеЗаписи</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеЗаписиУправлениеПоискомКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ДанныеЗаписиУправлениеПоискомРасширеннаяПодсказка" id="10"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ДанныеЗаписиВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ДанныеЗаписиИмяРеквизита" id="14">
+									<DataPath>ДанныеЗаписи.ИмяРеквизита</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДанныеЗаписиИмяРеквизитаКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ДанныеЗаписиИмяРеквизитаРасширеннаяПодсказка" id="16"/>
+								</InputField>
+								<InputField name="ДанныеЗаписиЗначениеРеквизита" id="17">
+									<DataPath>ДанныеЗаписи.ЗначениеРеквизита</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значение</v8:content>
+										</v8:item>
+									</Title>
+									<ChooseType>false</ChooseType>
+									<BackColor>web:LightYellow</BackColor>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ДанныеЗаписиЗначениеРеквизитаКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="ДанныеЗаписиЗначениеРеквизитаРасширеннаяПодсказка" id="19"/>
+									<Events>
+										<Event name="OnChange">ДанныеЗаписиЗначениеРеквизитаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ДанныеЗаписиПредставлениеТипа" id="31">
+									<DataPath>ДанныеЗаписи.ПредставлениеТипа</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тип</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<TextColor>web:MidnightBlue</TextColor>
+									<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ДанныеЗаписиПредставлениеТипаКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ДанныеЗаписиПредставлениеТипаРасширеннаяПодсказка" id="33"/>
+								</InputField>
+								<InputField name="ДанныеЗаписиСинонимРеквизита" id="25">
+									<DataPath>ДанныеЗаписи.СинонимРеквизита</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Синоним</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ДанныеЗаписиСинонимРеквизитаКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ДанныеЗаписиСинонимРеквизитаРасширеннаяПодсказка" id="27"/>
+								</InputField>
+								<InputField name="ДанныеЗаписиКомментарийРеквизита" id="28">
+									<DataPath>ДанныеЗаписи.КомментарийРеквизита</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Комментарий</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<TextColor>web:MediumGray</TextColor>
+									<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ДанныеЗаписиКомментарийРеквизитаКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ДанныеЗаписиКомментарийРеквизитаРасширеннаяПодсказка" id="30"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаИзмененияНаУзлахПлановОбмена" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница изменения на узлах планов обмена</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.ExchangePlan</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="СтраницаИзмененияНаУзлахПлановОбменаРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<Table name="ДеревоУзловОбмена" id="55">
+							<Representation>Tree</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ДеревоУзловОбмена</DataPath>
+							<ContextMenu name="ДеревоУзловОбменаКонтекстноеМеню" id="56"/>
+							<AutoCommandBar name="ДеревоУзловОбменаКоманднаяПанель" id="57">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДеревоУзловОбменаРасширеннаяПодсказка" id="58"/>
+							<SearchStringAddition name="ДеревоУзловОбменаСтрокаПоиска" id="59">
+								<AdditionSource>
+									<Item>ДеревоУзловОбмена</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоУзловОбменаСтрокаПоискаКонтекстноеМеню" id="60"/>
+								<ExtendedTooltip name="ДеревоУзловОбменаСтрокаПоискаРасширеннаяПодсказка" id="61"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоУзловОбменаСостояниеПросмотра" id="62">
+								<AdditionSource>
+									<Item>ДеревоУзловОбмена</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоУзловОбменаСостояниеПросмотраКонтекстноеМеню" id="63"/>
+								<ExtendedTooltip name="ДеревоУзловОбменаСостояниеПросмотраРасширеннаяПодсказка" id="64"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоУзловОбменаУправлениеПоиском" id="65">
+								<AdditionSource>
+									<Item>ДеревоУзловОбмена</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоУзловОбменаУправлениеПоискомКонтекстноеМеню" id="66"/>
+								<ExtendedTooltip name="ДеревоУзловОбменаУправлениеПоискомРасширеннаяПодсказка" id="67"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<ColumnGroup name="ДеревоУзловОбменаНаименованиеПометка" id="83">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дерево узлов обмена наименование пометка</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дерево узлов обмена наименование пометка</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="ДеревоУзловОбменаНаименованиеПометкаРасширеннаяПодсказка" id="84"/>
+									<ChildItems>
+										<InputField name="ДеревоУзловОбменаНаименование" id="68">
+											<DataPath>ДеревоУзловОбмена.Наименование</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ContextMenu name="ДеревоУзловОбменаНаименованиеКонтекстноеМеню" id="69"/>
+											<ExtendedTooltip name="ДеревоУзловОбменаНаименованиеРасширеннаяПодсказка" id="70"/>
+										</InputField>
+										<InputField name="ДеревоУзловОбменаПометка" id="74">
+											<DataPath>ДеревоУзловОбмена.Пометка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Узел</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДеревоУзловОбменаПометкаКонтекстноеМеню" id="75"/>
+											<ExtendedTooltip name="ДеревоУзловОбменаПометкаРасширеннаяПодсказка" id="76"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ДеревоУзловОбменаКод" id="80">
+									<DataPath>ДеревоУзловОбмена.Код</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоУзловОбменаКодКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ДеревоУзловОбменаКодРасширеннаяПодсказка" id="82"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПредставлениеXML" id="85">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>XML</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница представление XML</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="СтраницаПредставлениеXMLРасширеннаяПодсказка" id="86"/>
+					<ChildItems>
+						<TextDocumentField name="ДанныеОбъектаXMLТекст" id="87">
+							<DataPath>ДанныеОбъектаXMLТекст</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>XML</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<Font ref="style:NormalTextFont" faceName="Consolas" height="10" kind="StyleItem"/>
+							<ContextMenu name="ДанныеОбъектаXMLТекстКонтекстноеМеню" id="88"/>
+							<ExtendedTooltip name="ДанныеОбъектаXMLТекстРасширеннаяПодсказка" id="89"/>
+						</TextDocumentField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -318,6 +542,263 @@
 			</Title>
 			<Type/>
 		</Attribute>
+		<Attribute name="ДанныеЗаписиДоИзменения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные записи (до изменения)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяРеквизита" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗначениеРеквизита" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="ТипРеквизита" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СинонимРеквизита" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синоним реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КомментарийРеквизита" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеТипа" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление типа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИндексКартинки" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Изменен" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТолькоПросмотр" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Только просмотр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПредставлениеЗаписи" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление записи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоУзловОбмена" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево узлов обмена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Наименование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИндексКартинки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="3">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Код" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Уровень" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уровень</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДанныеОбъектаXMLТекст" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные объекта XMLТекст</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -420,9 +901,6 @@
 		</Command>
 	</Commands>
 	<Parameters>
-		<Parameter name="ПараметрыЗаписи">
-			<Type/>
-		</Parameter>
 		<Parameter name="ОбъектБазы">
 			<Type/>
 		</Parameter>

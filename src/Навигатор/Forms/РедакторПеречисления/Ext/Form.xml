@@ -1,0 +1,776 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="НадписьОбъектКонфигурацииИнфо" id="103">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>web:DarkBlue</TextColor>
+			<Font ref="style:NormalTextFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ContextMenu name="НадписьОбъектКонфигурацииИнфоКонтекстноеМеню" id="104"/>
+			<ExtendedTooltip name="НадписьОбъектКонфигурацииИнфоРасширеннаяПодсказка" id="105"/>
+		</LabelDecoration>
+		<CommandBar name="КоманднаяПанельФормы" id="99">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="КоманднаяПанельФормыРасширеннаяПодсказка" id="100"/>
+			<ChildItems>
+				<Button name="Закрыть" id="101">
+					<Type>CommandBarButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ShapeRepresentation>WhenActive</ShapeRepresentation>
+					<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="102"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<Pages name="СтраницыФормы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыФормыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="СтраницаРеквизиты" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница реквизиты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.Attribute</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="СтраницаРеквизитыРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<Table name="ВсеРеквизиты" id="41">
+							<Representation>Tree</Representation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<HeightInTableRows>3</HeightInTableRows>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ВсеРеквизиты</DataPath>
+							<RowPictureDataPath>ВсеРеквизиты.НомерКартинки</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Abs>RowsPicture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<ContextMenu name="ВсеРеквизитыКонтекстноеМеню" id="42"/>
+							<AutoCommandBar name="ВсеРеквизитыКоманднаяПанель" id="43">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ВсеРеквизитыРасширеннаяПодсказка" id="44"/>
+							<SearchStringAddition name="ВсеРеквизитыСтрокаПоиска" id="45">
+								<AdditionSource>
+									<Item>ВсеРеквизиты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВсеРеквизитыСтрокаПоискаКонтекстноеМеню" id="46"/>
+								<ExtendedTooltip name="ВсеРеквизитыСтрокаПоискаРасширеннаяПодсказка" id="47"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВсеРеквизитыСостояниеПросмотра" id="48">
+								<AdditionSource>
+									<Item>ВсеРеквизиты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВсеРеквизитыСостояниеПросмотраКонтекстноеМеню" id="49"/>
+								<ExtendedTooltip name="ВсеРеквизитыСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВсеРеквизитыУправлениеПоиском" id="51">
+								<AdditionSource>
+									<Item>ВсеРеквизиты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВсеРеквизитыУправлениеПоискомКонтекстноеМеню" id="52"/>
+								<ExtendedTooltip name="ВсеРеквизитыУправлениеПоискомРасширеннаяПодсказка" id="53"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ВсеРеквизитыИмя" id="54">
+									<DataPath>ВсеРеквизиты.Имя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВсеРеквизитыИмяКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ВсеРеквизитыИмяРасширеннаяПодсказка" id="56"/>
+								</InputField>
+								<InputField name="ВсеРеквизитыЗначение" id="60">
+									<DataPath>ВсеРеквизиты.Значение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ВсеРеквизитыЗначениеКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ВсеРеквизитыЗначениеРасширеннаяПодсказка" id="62"/>
+								</InputField>
+								<InputField name="ВсеРеквизитыПредставлениеТипа" id="75">
+									<DataPath>ВсеРеквизиты.ПредставлениеТипа</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тип</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<TextColor>web:MidnightBlue</TextColor>
+									<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ВсеРеквизитыПредставлениеТипаКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ВсеРеквизитыПредставлениеТипаРасширеннаяПодсказка" id="77"/>
+								</InputField>
+								<InputField name="ВсеРеквизитыТип" id="57">
+									<DataPath>ВсеРеквизиты.Тип</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<TextColor>web:MidnightBlue</TextColor>
+									<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ВсеРеквизитыТипКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ВсеРеквизитыТипРасширеннаяПодсказка" id="59"/>
+								</InputField>
+								<InputField name="ВсеРеквизитыСиноним" id="63">
+									<DataPath>ВсеРеквизиты.Синоним</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ВсеРеквизитыСинонимКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ВсеРеквизитыСинонимРасширеннаяПодсказка" id="65"/>
+								</InputField>
+								<InputField name="ВсеРеквизитыПорядокСортировки" id="66">
+									<DataPath>ВсеРеквизиты.ПорядокСортировки</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВсеРеквизитыПорядокСортировкиКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ВсеРеквизитыПорядокСортировкиРасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<CheckBoxField name="ВсеРеквизитыСтандартный" id="69">
+									<DataPath>ВсеРеквизиты.Стандартный</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВсеРеквизитыСтандартныйКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ВсеРеквизитыСтандартныйРасширеннаяПодсказка" id="71"/>
+								</CheckBoxField>
+								<InputField name="ВсеРеквизитыКомментарий" id="72">
+									<DataPath>ВсеРеквизиты.Комментарий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<TextColor>web:MediumGray</TextColor>
+									<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ВсеРеквизитыКомментарийКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ВсеРеквизитыКомментарийРасширеннаяПодсказка" id="74"/>
+								</InputField>
+								<InputField name="ВсеРеквизитыНомерКартинки" id="78">
+									<DataPath>ВсеРеквизиты.НомерКартинки</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВсеРеквизитыНомерКартинкиКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="ВсеРеквизитыНомерКартинкиРасширеннаяПодсказка" id="80"/>
+								</InputField>
+								<CheckBoxField name="ВсеРеквизитыИзменен" id="81">
+									<DataPath>ВсеРеквизиты.Изменен</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВсеРеквизитыИзмененКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ВсеРеквизитыИзмененРасширеннаяПодсказка" id="83"/>
+								</CheckBoxField>
+								<InputField name="ВсеРеквизитыТипСтроки" id="84">
+									<DataPath>ВсеРеквизиты.ТипСтроки</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВсеРеквизитыТипСтрокиКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ВсеРеквизитыТипСтрокиРасширеннаяПодсказка" id="86"/>
+								</InputField>
+								<InputField name="ВсеРеквизитыПредставление" id="87">
+									<DataPath>ВсеРеквизиты.Представление</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВсеРеквизитыПредставлениеКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ВсеРеквизитыПредставлениеРасширеннаяПодсказка" id="89"/>
+								</InputField>
+								<CheckBoxField name="ВсеРеквизитыСистемный" id="90">
+									<DataPath>ВсеРеквизиты.Системный</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВсеРеквизитыСистемныйКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ВсеРеквизитыСистемныйРасширеннаяПодсказка" id="92"/>
+								</CheckBoxField>
+								<CheckBoxField name="ВсеРеквизитыВыводитьЗачеркнутым" id="93">
+									<DataPath>ВсеРеквизиты.ВыводитьЗачеркнутым</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВсеРеквизитыВыводитьЗачеркнутымКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ВсеРеквизитыВыводитьЗачеркнутымРасширеннаяПодсказка" id="95"/>
+								</CheckBoxField>
+								<CheckBoxField name="ВсеРеквизитыТолькоПросмотр" id="96">
+									<DataPath>ВсеРеквизиты.ТолькоПросмотр</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВсеРеквизитыТолькоПросмотрКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ВсеРеквизитыТолькоПросмотрРасширеннаяПодсказка" id="98"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+						<Table name="ЗначенияПеречисления" id="10">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<HeightInTableRows>5</HeightInTableRows>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ЗначенияПеречисления</DataPath>
+							<RowPictureDataPath>ЗначенияПеречисления.НомерКартинки</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Abs>RowsPicture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЗначенияПеречисленияКонтекстноеМеню" id="11"/>
+							<AutoCommandBar name="ЗначенияПеречисленияКоманднаяПанель" id="12">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЗначенияПеречисленияРасширеннаяПодсказка" id="13"/>
+							<SearchStringAddition name="ЗначенияПеречисленияСтрокаПоиска" id="14">
+								<AdditionSource>
+									<Item>ЗначенияПеречисления</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗначенияПеречисленияСтрокаПоискаКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="ЗначенияПеречисленияСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗначенияПеречисленияСостояниеПросмотра" id="17">
+								<AdditionSource>
+									<Item>ЗначенияПеречисления</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗначенияПеречисленияСостояниеПросмотраКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="ЗначенияПеречисленияСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗначенияПеречисленияУправлениеПоиском" id="20">
+								<AdditionSource>
+									<Item>ЗначенияПеречисления</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗначенияПеречисленияУправлениеПоискомКонтекстноеМеню" id="21"/>
+								<ExtendedTooltip name="ЗначенияПеречисленияУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ЗначенияПеречисленияВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ЗначенияПеречисленияПорядок" id="106">
+									<DataPath>ЗначенияПеречисления.Порядок</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>№</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ContextMenu name="ЗначенияПеречисленияПорядокКонтекстноеМеню" id="107"/>
+									<ExtendedTooltip name="ЗначенияПеречисленияПорядокРасширеннаяПодсказка" id="108"/>
+								</InputField>
+								<InputField name="ЗначенияПеречисленияИмя" id="23">
+									<DataPath>ЗначенияПеречисления.Имя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗначенияПеречисленияИмяКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ЗначенияПеречисленияИмяРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="ЗначенияПеречисленияСиноним" id="29">
+									<DataPath>ЗначенияПеречисления.Синоним</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ЗначенияПеречисленияСинонимКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ЗначенияПеречисленияСинонимРасширеннаяПодсказка" id="31"/>
+								</InputField>
+								<InputField name="ЗначенияПеречисленияКомментарий" id="26">
+									<DataPath>ЗначенияПеречисления.Комментарий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<TextColor>web:MediumGray</TextColor>
+									<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ЗначенияПеречисленияКомментарийКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ЗначенияПеречисленияКомментарийРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="ЗначенияПеречисленияОбъектРасширяемойКонфигурации" id="32">
+									<DataPath>ЗначенияПеречисления.ОбъектРасширяемойКонфигурации</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Объект</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<TextColor>web:Maroon</TextColor>
+									<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ЗначенияПеречисленияОбъектРасширяемойКонфигурацииКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ЗначенияПеречисленияОбъектРасширяемойКонфигурацииРасширеннаяПодсказка" id="34"/>
+								</InputField>
+								<InputField name="ЗначенияПеречисленияПринадлежностьОбъекта" id="35">
+									<DataPath>ЗначенияПеречисления.ПринадлежностьОбъекта</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Принадлежность</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<TextColor>web:Maroon</TextColor>
+									<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ЗначенияПеречисленияПринадлежностьОбъектаКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ЗначенияПеречисленияПринадлежностьОбъектаРасширеннаяПодсказка" id="37"/>
+								</InputField>
+								<CheckBoxField name="ЗначенияПеречисленияТекущееЗначение" id="38">
+									<DataPath>ЗначенияПеречисления.ТекущееЗначение</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗначенияПеречисленияТекущееЗначениеКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ЗначенияПеречисленияТекущееЗначениеРасширеннаяПодсказка" id="40"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.Навигатор</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ОбъектБазы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект базы</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ЗначенияПеречисления" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значения перечисления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Синоним" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синоним</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбъектРасширяемойКонфигурации" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект расширяемой конфигурации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПринадлежностьОбъекта" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Принадлежность объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекущееЗначение" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущее значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Порядок" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порядок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерКартинки" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВсеРеквизиты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Тип" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Значение" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="Синоним" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синоним</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПорядокСортировки" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порядок сортировки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Стандартный" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стандартный</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеТипа" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление типа реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерКартинки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Изменен" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТипСтроки" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип строки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Представление" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Системный" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Системный реквизит</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВыводитьЗачеркнутым" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выводить зачеркнутым</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТолькоПросмотр" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Только просмотр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИмяВидаПеречисления" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя вида перечисления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЗначенияПеречисленияИмя</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ЗначенияПеречисления.ТекущееЗначение</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Parameters>
+		<Parameter name="ОбъектБазы">
+			<Type>
+				<v8:TypeSet>cfg:EnumRef</v8:TypeSet>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

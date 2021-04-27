@@ -75,6 +75,7 @@
 										<xr:Abs>Picture.png</xr:Abs>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
 									<ExtendedTooltip name="КомандаВыходРасширеннаяПодсказка" id="56"/>
 								</Button>
 							</ChildItems>

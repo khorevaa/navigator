@@ -24,6 +24,7 @@
 						<v8:content>Выход</v8:content>
 					</v8:item>
 				</Title>
+				<ShapeRepresentation>WhenActive</ShapeRepresentation>
 				<ExtendedTooltip name="КомандаВыходРасширеннаяПодсказка" id="33"/>
 			</Button>
 			<ButtonGroup name="ГруппаСортировать" id="38">
@@ -45,12 +46,14 @@
 					<Button name="КомандаСортироватьСписокПоУбыванию" id="36">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Item.ЗначенияКонстант.StandardCommand.SortListDesc</CommandName>
+						<ShapeRepresentation>WhenActive</ShapeRepresentation>
 						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 						<ExtendedTooltip name="КомандаСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="37"/>
 					</Button>
 					<Button name="КомандаСортироватьСписокПоВозрастанию" id="34">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Item.ЗначенияКонстант.StandardCommand.SortListAsc</CommandName>
+						<ShapeRepresentation>WhenActive</ShapeRepresentation>
 						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 						<ExtendedTooltip name="КомандаСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="35"/>
 					</Button>
@@ -60,6 +63,7 @@
 				<Type>CommandBarButton</Type>
 				<Representation>Picture</Representation>
 				<CommandName>Form.Item.ЗначенияКонстант.StandardCommand.CancelSearch</CommandName>
+				<ShapeRepresentation>WhenActive</ShapeRepresentation>
 				<ExtendedTooltip name="КомандаОтменитьПоискРасширеннаяПодсказка" id="41"/>
 			</Button>
 		</ChildItems>

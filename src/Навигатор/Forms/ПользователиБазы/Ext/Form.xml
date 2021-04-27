@@ -24,6 +24,7 @@
 						<v8:content>Закрыть</v8:content>
 					</v8:item>
 				</Title>
+				<ShapeRepresentation>WhenActive</ShapeRepresentation>
 				<ExtendedTooltip name="КомандаВыходРасширеннаяПодсказка" id="33"/>
 			</Button>
 			<ButtonGroup name="ГруппаСортировать" id="107">
@@ -45,12 +46,14 @@
 					<Button name="КомандаСортироватьСписокПоВозрастанию" id="101">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Item.ВсеПользователи.StandardCommand.SortListAsc</CommandName>
+						<ShapeRepresentation>WhenActive</ShapeRepresentation>
 						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 						<ExtendedTooltip name="КомандаСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="102"/>
 					</Button>
 					<Button name="КомандаСортироватьСписокПоУбыванию" id="103">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Item.ВсеПользователи.StandardCommand.SortListDesc</CommandName>
+						<ShapeRepresentation>WhenActive</ShapeRepresentation>
 						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 						<ExtendedTooltip name="КомандаСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="104"/>
 					</Button>
@@ -60,12 +63,14 @@
 				<Type>CommandBarButton</Type>
 				<Representation>Picture</Representation>
 				<CommandName>Form.Item.ВсеПользователи.StandardCommand.CancelSearch</CommandName>
+				<ShapeRepresentation>WhenActive</ShapeRepresentation>
 				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="КомандаОтменитьПоискРасширеннаяПодсказка" id="106"/>
 			</Button>
 			<Button name="КомандаЗапуститьОтИмениПользователя" id="109">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.КомандаЗапуститьОтИмениПользователя</CommandName>
+				<ShapeRepresentation>WhenActive</ShapeRepresentation>
 				<ExtendedTooltip name="КомандаЗапуститьОтИмениПользователяРасширеннаяПодсказка" id="110"/>
 			</Button>
 		</ChildItems>
@@ -77,6 +82,7 @@
 	<ChildItems>
 		<Table name="ВсеПользователи" id="34">
 			<Representation>List</Representation>
+			<CommandBarLocation>Top</CommandBarLocation>
 			<ChangeRowSet>false</ChangeRowSet>
 			<HeaderHeight>2</HeaderHeight>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -84,11 +90,14 @@
 			<EnableDrag>true</EnableDrag>
 			<FileDragMode>AsFile</FileDragMode>
 			<DataPath>ВсеПользователи</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+			</CommandSet>
 			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="ВсеПользователиКонтекстноеМеню" id="35"/>
-			<AutoCommandBar name="ВсеПользователиКоманднаяПанель" id="36">
-				<Autofill>false</Autofill>
-			</AutoCommandBar>
+			<AutoCommandBar name="ВсеПользователиКоманднаяПанель" id="36"/>
 			<ExtendedTooltip name="ВсеПользователиРасширеннаяПодсказка" id="37"/>
 			<SearchStringAddition name="ВсеПользователиСтрокаПоиска" id="38">
 				<AdditionSource>
@@ -151,6 +160,12 @@
 				</InputField>
 			</ChildItems>
 		</Table>
+		<LabelDecoration name="ИнфоКоличествоЗаписей" id="111">
+			<Font ref="style:NormalTextFont" height="8" kind="StyleItem"/>
+			<BackColor>style:TableFooterBackColor</BackColor>
+			<ContextMenu name="ИнфоКоличествоЗаписейКонтекстноеМеню" id="112"/>
+			<ExtendedTooltip name="ИнфоКоличествоЗаписейРасширеннаяПодсказка" id="113"/>
+		</LabelDecoration>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -452,7 +467,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда запустить от имени пользователя</v8:content>
+					<v8:content>Запустить от имени пользователя</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>

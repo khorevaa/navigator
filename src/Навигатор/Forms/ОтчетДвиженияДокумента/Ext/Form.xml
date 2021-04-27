@@ -13,6 +13,7 @@
 					<xr:Abs>Picture.png</xr:Abs>
 					<xr:LoadTransparent>false</xr:LoadTransparent>
 				</Picture>
+				<ShapeRepresentation>WhenActive</ShapeRepresentation>
 				<ExtendedTooltip name="КомандаВыходРасширеннаяПодсказка" id="7"/>
 			</Button>
 			<Button name="КомандаСформировать" id="4">
@@ -24,6 +25,7 @@
 					<xr:Ref>StdPicture.GenerateReport</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<ShapeRepresentation>WhenActive</ShapeRepresentation>
 				<ExtendedTooltip name="КомандаСформироватьРасширеннаяПодсказка" id="5"/>
 			</Button>
 		</ChildItems>

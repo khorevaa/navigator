@@ -19,12 +19,14 @@
 					<xr:Abs>Picture.png</xr:Abs>
 					<xr:LoadTransparent>false</xr:LoadTransparent>
 				</Picture>
+				<ShapeRepresentation>WhenActive</ShapeRepresentation>
 				<ExtendedTooltip name="КомандаВыходРасширеннаяПодсказка" id="41"/>
 			</Button>
 			<Button name="КомандаЗапуститьОтИмениПользователя" id="32">
 				<Type>CommandBarButton</Type>
 				<Representation>PictureAndText</Representation>
 				<CommandName>Form.Command.КомандаЗапуститьОтИмениПользователя</CommandName>
+				<ShapeRepresentation>WhenActive</ShapeRepresentation>
 				<ExtendedTooltip name="КомандаЗапуститьОтИмениПользователяРасширеннаяПодсказка" id="33"/>
 			</Button>
 		</ChildItems>

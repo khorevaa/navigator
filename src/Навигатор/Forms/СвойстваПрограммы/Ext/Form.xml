@@ -39,6 +39,7 @@
 				<xr:Abs>Picture.png</xr:Abs>
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
+			<ShapeRepresentation>WhenActive</ShapeRepresentation>
 			<ExtendedTooltip name="КомандаВыходРасширеннаяПодсказка" id="26"/>
 		</Button>
 		<LabelDecoration name="НадписьНомерВерсии" id="17">

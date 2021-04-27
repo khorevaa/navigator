@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
-	<ExternalDataProcessor uuid="390bf015-fb82-4d83-bfcc-cb5f47793cd9">
+	<ExternalDataProcessor uuid="35bdbeec-5a02-4eb1-8fd3-2f7c71f8ea53">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
-				<xr:ObjectId>342305f7-068c-4c15-bb86-31122350d703</xr:ObjectId>
+				<xr:ObjectId>5ba6e0e7-047e-400d-ae09-6e1a93f37729</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:GeneratedType name="ExternalDataProcessorObject.Навигатор" category="Object">
-				<xr:TypeId>100458d1-873e-489e-a2c4-6480f1f51466</xr:TypeId>
-				<xr:ValueId>ac4f177b-da63-4ecc-9d0a-4edc536522df</xr:ValueId>
+				<xr:TypeId>3d49117c-dc8b-42c6-839b-dd65dfef6747</xr:TypeId>
+				<xr:ValueId>229ad31e-5583-40e3-9018-b64a6590b477</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -24,7 +24,7 @@
 			<AuxiliaryForm/>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="92881a53-72e5-4b72-bc15-cf8afad389c0">
+			<Attribute uuid="0f88055c-aa86-4743-b4f6-e5f7e34e5637">
 				<Properties>
 					<Name>Настройки_ОтображатьКоличествоЭлементов</Name>
 					<Synonym>
@@ -58,7 +58,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="bfb99e3b-4cce-4ff1-9fde-2fe2e2c07a08">
+			<Attribute uuid="03a24efa-fcde-466e-a0e7-a59e81fc1d44">
 				<Properties>
 					<Name>Настройки_ОтображатьПанельИзбранногоПриОткрытии</Name>
 					<Synonym>
@@ -92,7 +92,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="cda85f4c-4430-4bbf-b183-7783e0c8ec56">
+			<Attribute uuid="8235b961-7c2f-41b8-8704-b22e43613275">
 				<Properties>
 					<Name>Настройки_ОтображатьПанельИсторииПриОткрытии</Name>
 					<Synonym>
@@ -126,109 +126,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="259aad99-448d-4243-8662-585dbc42f3bd">
-				<Properties>
-					<Name>Настройки_ПроверятьНаличиеОбновленийПриЗапуске</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Проверять наличие обновлений при запуске</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="778f6489-93f4-40c6-9052-76e24c262593">
-				<Properties>
-					<Name>Настройки_РежимРазработчика</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Режим разработчика</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="4c01a94d-4151-4f15-9bed-17dc1505bde3">
-				<Properties>
-					<Name>Настройки_ПодтверждатьЗакрытиеНавигатора</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Подтверждать закрытие навигатора</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="9737f43d-3d34-4cdc-aa59-016ce57ddda5">
+			<Attribute uuid="943b22ed-6aef-42fa-9ab0-45ac3b5407f4">
 				<Properties>
 					<Name>Настройки_ПереключательНалиичияЗаписейЕстьЗаписи</Name>
 					<Synonym>
@@ -262,7 +160,143 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="90dd10bc-7903-428b-97a1-a4915d4800b6">
+			<Attribute uuid="bd6854a2-6254-476b-ad45-db1186b57a09">
+				<Properties>
+					<Name>Настройки_ПодтверждатьЗакрытиеНавигатора</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подтверждать закрытие</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="366fdeec-dd43-4158-b631-e7779275221c">
+				<Properties>
+					<Name>Настройки_ПроверятьНаличиеОбновленийПриЗапуске</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверять наличие обновлений при запуске</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="5ca2625a-232e-40ec-8a0d-c59144ca2060">
+				<Properties>
+					<Name>Настройки_РежимРазработчика</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим разработчика</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="b74deff4-c105-4b6b-a8a2-216a03cf8ba2">
+				<Properties>
+					<Name>Настройки_СортироватьОбъектыМетаданных</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сортировать объекты метаданных</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="7d43ab93-c148-4f96-86c0-ce69d0beee05">
 				<Properties>
 					<Name>Система_РазделительЧастейИмен</Name>
 					<Synonym>
@@ -300,15 +334,15 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<TabularSection uuid="bf17fc98-3401-4a54-a412-35eac476661c">
+			<TabularSection uuid="26061314-8d0b-4a6e-a10b-f065e5c6dcd9">
 				<InternalInfo>
 					<xr:GeneratedType name="DataProcessorTabularSection.Навигатор.ИзбранныеЭлементы" category="TabularSection">
-						<xr:TypeId>4f92f8ae-9d4d-4909-9283-563d4b3c9ed8</xr:TypeId>
-						<xr:ValueId>8c430880-f54b-47b1-9a81-6b4932a60432</xr:ValueId>
+						<xr:TypeId>0ba61cd9-9418-4e22-b704-4e3185fd437f</xr:TypeId>
+						<xr:ValueId>956eafc5-8fed-4f01-bf14-0f8e310fa636</xr:ValueId>
 					</xr:GeneratedType>
 					<xr:GeneratedType name="DataProcessorTabularSectionRow.Навигатор.ИзбранныеЭлементы" category="TabularSectionRow">
-						<xr:TypeId>77c9c8a1-d40f-43df-880a-6888fcc81c62</xr:TypeId>
-						<xr:ValueId>73ad1d2d-29f1-4db3-a1a9-db392ad544f4</xr:ValueId>
+						<xr:TypeId>156598f0-80f7-446c-93c3-2797c6547337</xr:TypeId>
+						<xr:ValueId>77e20a63-de35-4959-84cc-8f6b74b02a22</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
@@ -352,7 +386,7 @@
 					</StandardAttributes>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="39e1ba53-a1c1-4549-b339-9e1330f469d4">
+					<Attribute uuid="f423d372-6260-4e0b-a266-26f4c0c20a47">
 						<Properties>
 							<Name>ИдЗаписи</Name>
 							<Synonym>
@@ -392,7 +426,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="6e2d138d-58b9-4b49-b657-fbad332a21d8">
+					<Attribute uuid="d18a4e80-49b7-4b87-a59d-e034e2d97329">
 						<Properties>
 							<Name>Представление</Name>
 							<Synonym>
@@ -432,7 +466,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="887c1c88-f5a3-4891-8b1d-92c56fe88651">
+					<Attribute uuid="e49a8af0-4fb5-477e-9547-9ae227a7a461">
 						<Properties>
 							<Name>Родитель</Name>
 							<Synonym>
@@ -472,7 +506,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="9f5ffa4f-97ab-47fd-a36f-7647bfecfdf6">
+					<Attribute uuid="fcf1215d-6ba3-4337-955e-43d37f0e815c">
 						<Properties>
 							<Name>Ссылка</Name>
 							<Synonym>
@@ -508,7 +542,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="65647f7c-dc79-4a70-8e13-6f39ecd174fa">
+					<Attribute uuid="422ce875-3555-4e9d-b9e6-49abd5383b65">
 						<Properties>
 							<Name>ТипЗначения</Name>
 							<Synonym>
@@ -548,7 +582,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="682d5521-fa05-466e-8d2e-c9ef8faab7ba">
+					<Attribute uuid="df3f3416-38f4-4743-8221-4ebcb2572cb2">
 						<Properties>
 							<Name>НавигационнаяСсылка</Name>
 							<Synonym>
@@ -590,15 +624,15 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<TabularSection uuid="9ab04ebb-93f6-4cf9-892d-b7139d9b32f5">
+			<TabularSection uuid="47b2e658-8dc0-405e-9ec5-464d6a00e23e">
 				<InternalInfo>
 					<xr:GeneratedType name="DataProcessorTabularSection.Навигатор.ИсторияНавигации" category="TabularSection">
-						<xr:TypeId>c67b3cf4-84c6-4fec-99d7-bf5852badd21</xr:TypeId>
-						<xr:ValueId>ffe44149-6e84-409d-9236-49e2773c8eca</xr:ValueId>
+						<xr:TypeId>e3eb046d-bc15-4126-9a24-acb304c5056f</xr:TypeId>
+						<xr:ValueId>d9a0285d-0b3e-4bd9-9ad7-060d10734698</xr:ValueId>
 					</xr:GeneratedType>
 					<xr:GeneratedType name="DataProcessorTabularSectionRow.Навигатор.ИсторияНавигации" category="TabularSectionRow">
-						<xr:TypeId>021be045-3f77-403a-90f0-0aa1f16349a2</xr:TypeId>
-						<xr:ValueId>85984682-16a4-45bf-bcd1-19392ef72be5</xr:ValueId>
+						<xr:TypeId>d59ad8e1-5a45-420c-b1ad-848d51d3c17d</xr:TypeId>
+						<xr:ValueId>310fe4e7-d5ed-4485-9715-cb4eef8eca2f</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
@@ -642,7 +676,7 @@
 					</StandardAttributes>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="672b38da-350e-42a6-9889-56f80f3595ef">
+					<Attribute uuid="499b385e-582a-49af-945a-1b6e0a16a141">
 						<Properties>
 							<Name>ИдЗаписи</Name>
 							<Synonym>
@@ -682,7 +716,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="4549e314-55ab-428c-8069-37eb0a3a3976">
+					<Attribute uuid="faf6072f-ff65-496f-b23a-a8a983c25c47">
 						<Properties>
 							<Name>Представление</Name>
 							<Synonym>
@@ -722,7 +756,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="8e26d9dd-905f-41d3-8cc2-00ecf670a46e">
+					<Attribute uuid="497abce6-ba93-48b5-ad4c-d629ed500061">
 						<Properties>
 							<Name>Ссылка</Name>
 							<Synonym>
@@ -763,7 +797,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="e601704f-d3fc-41ce-bfba-67ef3816502d">
+					<Attribute uuid="85365704-22ad-4a44-98b9-32c98787eb7b">
 						<Properties>
 							<Name>ДатаСобытия</Name>
 							<Synonym>
@@ -802,7 +836,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="ddf66139-4402-42a7-9bfb-63c3218063dd">
+					<Attribute uuid="742d969c-075f-49f1-897f-4b7d8d46da14">
 						<Properties>
 							<Name>ТипЗначения</Name>
 							<Synonym>
@@ -842,7 +876,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="2774a3ea-c2d3-4f4d-a2e8-e98ab2835e37">
+					<Attribute uuid="c48f7d95-d79e-4723-8e8a-55db446a940e">
 						<Properties>
 							<Name>НавигационнаяСсылка</Name>
 							<Synonym>
@@ -882,7 +916,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="92a020c9-e9b6-481f-9935-197371bbe388">
+					<Attribute uuid="f6befd87-a8a7-427d-a14f-52b01ab43ea4">
 						<Properties>
 							<Name>ТипЭлемента</Name>
 							<Synonym>
@@ -924,15 +958,15 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<TabularSection uuid="2f4b7f7e-b0cd-4946-a9bf-0ded576c30b7">
+			<TabularSection uuid="fce73bbd-852c-45ca-8ad0-177947a05f23">
 				<InternalInfo>
 					<xr:GeneratedType name="DataProcessorTabularSection.Навигатор.СвязиПоВладельцам" category="TabularSection">
-						<xr:TypeId>8c09cecd-cad3-44f8-923d-54d1d4b293fc</xr:TypeId>
-						<xr:ValueId>d49e279b-b92d-4a51-b37c-01411751a7d5</xr:ValueId>
+						<xr:TypeId>85de716f-f569-4692-b286-2ef240935340</xr:TypeId>
+						<xr:ValueId>9572c377-782f-4082-96f4-ef0c4868b9dd</xr:ValueId>
 					</xr:GeneratedType>
 					<xr:GeneratedType name="DataProcessorTabularSectionRow.Навигатор.СвязиПоВладельцам" category="TabularSectionRow">
-						<xr:TypeId>311068f8-4afa-444e-a556-f0cf5a652fd2</xr:TypeId>
-						<xr:ValueId>1d65940a-775a-4513-87e2-d0d62e774f29</xr:ValueId>
+						<xr:TypeId>d90e9411-f5fe-4481-9b8f-918b443aa044</xr:TypeId>
+						<xr:ValueId>b57a9a42-47e8-4ffc-9aa3-e7f4b31bfc52</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
@@ -976,7 +1010,7 @@
 					</StandardAttributes>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="f54f548d-ba6c-44be-b32e-2a58e61f29ab">
+					<Attribute uuid="29c0956b-b198-4b53-8fd2-99081d2a525d">
 						<Properties>
 							<Name>ИмяОбъекта</Name>
 							<Synonym>
@@ -1016,7 +1050,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="f4b7e38d-6276-411a-bbfc-b7bc66cd1705">
+					<Attribute uuid="87a330d1-a1d1-4c75-bdce-47a316dbaf13">
 						<Properties>
 							<Name>ЯвляетсяВладельцемДля</Name>
 							<Synonym>
@@ -1068,10 +1102,15 @@
 			<Form>ПользователиБазы</Form>
 			<Form>ПользовательБазы</Form>
 			<Form>РедакторЗаписи</Form>
-			<Form>РедакторНабораЗаписей</Form>
+			<Form>РедакторЗаписиРегистраСведений</Form>
 			<Form>РедакторОбъекта</Form>
+			<Form>РедакторПеречисления</Form>
+			<Form>РедакторСвязиОбъекта</Form>
+			<Form>РедакторХранилищаЗначения</Form>
 			<Form>СвойстваОбъекта</Form>
 			<Form>СвойстваПрограммы</Form>
+			<Form>СтруктураХраненияДанных</Form>
+			<Form>БСП_ОбщегоНазначенияКлиентСервер</Form>
 			<Template>ДвиженияДокумента</Template>
 			<Template>НастройкиМакетHTML</Template>
 			<Template>ПараметрыПолученияОбновлений</Template>

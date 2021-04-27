@@ -3,7 +3,7 @@
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
-			<v8:content>(...) Консоль кода</v8:content>
+			<v8:content>(...) Консоль</v8:content>
 		</v8:item>
 	</Title>
 	<AutoTitle>false</AutoTitle>
@@ -51,6 +51,7 @@
 с файлами кода</v8:content>
 						</v8:item>
 					</ToolTip>
+					<ShapeRepresentation>WhenActive</ShapeRepresentation>
 					<ExtendedTooltip name="ПодменюФайлРасширеннаяПодсказка" id="85"/>
 					<ChildItems>
 						<Button name="КомандаНовыйФайлКода" id="90">
@@ -60,6 +61,7 @@
 								<xr:Abs>Picture.png</xr:Abs>
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</Picture>
+							<ShapeRepresentation>WhenActive</ShapeRepresentation>
 							<ExtendedTooltip name="КомандаНовыйФайлКодаРасширеннаяПодсказка" id="91"/>
 						</Button>
 						<ButtonGroup name="ГруппаОткрыть" id="152">
@@ -84,6 +86,7 @@
 										<xr:Abs>Picture.png</xr:Abs>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
 									<ExtendedTooltip name="КомандаИсполняемыйКодОткрытьРасширеннаяПодсказка" id="13"/>
 								</Button>
 							</ChildItems>
@@ -110,6 +113,7 @@
 										<xr:Abs>Picture.png</xr:Abs>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
 									<ExtendedTooltip name="КомандаИсполняемыйКодСохранитьРасширеннаяПодсказка" id="133"/>
 								</Button>
 								<Button name="КомандаИсполняемыйКодСохранитьКак" id="16">
@@ -119,6 +123,7 @@
 										<xr:Abs>Picture.png</xr:Abs>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
 									<ExtendedTooltip name="КомандаИсполняемыйКодСохранитьКакРасширеннаяПодсказка" id="17"/>
 								</Button>
 								<Button name="КомандаИсполняемыйКодСохранитьВсе" id="146">
@@ -128,6 +133,7 @@
 										<xr:Abs>Picture.png</xr:Abs>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
 									<ExtendedTooltip name="КомандаИсполняемыйКодСохранитьВсеРасширеннаяПодсказка" id="147"/>
 								</Button>
 							</ChildItems>
@@ -139,6 +145,7 @@
 								<xr:Abs>Picture.png</xr:Abs>
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</Picture>
+							<ShapeRepresentation>WhenActive</ShapeRepresentation>
 							<ExtendedTooltip name="КомандаИсполняемыйКодЗакрытьРасширеннаяПодсказка" id="149"/>
 						</Button>
 						<ButtonGroup name="ГруппаВыход" id="150">
@@ -170,6 +177,7 @@
 											<v8:content>Выход</v8:content>
 										</v8:item>
 									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
 									<ExtendedTooltip name="КомандаВыходРасширеннаяПодсказка" id="15"/>
 								</Button>
 							</ChildItems>
@@ -199,28 +207,25 @@
 									<v8:content>Выполнить</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Подменю выполнить</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Picture>
 								<xr:Abs>Picture.png</xr:Abs>
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</Picture>
 							<Representation>Picture</Representation>
+							<ShapeRepresentation>WhenActive</ShapeRepresentation>
 							<ExtendedTooltip name="ПодменюВыполнитьРасширеннаяПодсказка" id="75"/>
 							<ChildItems>
 								<Button name="КомандаИсполняемыйКодВыполнитьНаКлиенте" id="10">
 									<Type>CommandBarButton</Type>
 									<Representation>PictureAndText</Representation>
 									<CommandName>Form.Command.КомандаИсполняемыйКодВыполнитьНаКлиенте</CommandName>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
 									<ExtendedTooltip name="КомандаИсполняемыйКодВыполнитьНаКлиентеРасширеннаяПодсказка" id="11"/>
 								</Button>
 								<Button name="КомандаИсполняемыйКодВыполнитьНаСервере" id="72">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.КомандаИсполняемыйКодВыполнитьНаСервере</CommandName>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
 									<ExtendedTooltip name="КомандаИсполняемыйКодВыполнитьНаСервереРасширеннаяПодсказка" id="73"/>
 								</Button>
 							</ChildItems>
@@ -228,6 +233,7 @@
 						<Button name="КомандаВыполнитьКод" id="92">
 							<Type>CommandBarButton</Type>
 							<CommandName>Form.Command.КомандаВыполнитьКод</CommandName>
+							<ShapeRepresentation>WhenActive</ShapeRepresentation>
 							<ExtendedTooltip name="КомандаВыполнитьКодРасширеннаяПодсказка" id="93"/>
 						</Button>
 					</ChildItems>
@@ -249,11 +255,13 @@
 						<xr:Abs>Picture.png</xr:Abs>
 						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</Picture>
+					<ShapeRepresentation>WhenActive</ShapeRepresentation>
 					<ExtendedTooltip name="ПодменюФрагментыРасширеннаяПодсказка" id="77"/>
 					<ChildItems>
 						<Button name="ФормаКомандаФрагментОткрытьФорму" id="78">
 							<Type>CommandBarButton</Type>
 							<CommandName>Form.Command.КомандаФрагментОткрытьФорму</CommandName>
+							<ShapeRepresentation>WhenActive</ShapeRepresentation>
 							<ExtendedTooltip name="ФормаКомандаФрагментОткрытьФормуРасширеннаяПодсказка" id="79"/>
 						</Button>
 					</ChildItems>
@@ -282,6 +290,7 @@
 						<xr:Abs>Picture.png</xr:Abs>
 						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</Picture>
+					<ShapeRepresentation>WhenActive</ShapeRepresentation>
 					<ExtendedTooltip name="КомандаНовыйФайлКодаБыстраяРасширеннаяПодсказка" id="137"/>
 				</Button>
 				<ButtonGroup name="ГруппаСохранитьОткрытьБыстрая" id="144">
@@ -307,6 +316,7 @@
 								<xr:Abs>Picture.png</xr:Abs>
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</Picture>
+							<ShapeRepresentation>WhenActive</ShapeRepresentation>
 							<ExtendedTooltip name="КомандаИсполняемыйКодОткрытьБыстраяРасширеннаяПодсказка" id="139"/>
 						</Button>
 						<Button name="КомандаИсполняемыйКодСохранитьБыстрая" id="140">
@@ -316,6 +326,7 @@
 								<xr:Abs>Picture.png</xr:Abs>
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</Picture>
+							<ShapeRepresentation>WhenActive</ShapeRepresentation>
 							<ExtendedTooltip name="КомандаИсполняемыйКодСохранитьБыстраяРасширеннаяПодсказка" id="141"/>
 						</Button>
 						<Button name="КомандаИсполняемыйКодСохранитьКакБыстрая" id="142">
@@ -325,6 +336,7 @@
 								<xr:Abs>Picture.png</xr:Abs>
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</Picture>
+							<ShapeRepresentation>WhenActive</ShapeRepresentation>
 							<ExtendedTooltip name="КомандаИсполняемыйКодСохранитьКакБыстраяРасширеннаяПодсказка" id="143"/>
 						</Button>
 					</ChildItems>
@@ -349,17 +361,129 @@
 				<Event name="OnCurrentPageChange">СтраницыИсполняемыйКодПриСменеСтраницы</Event>
 			</Events>
 		</Pages>
-		<InputField name="ИмяФайлаАктивногоРедактора" id="98">
+		<LabelField name="ИмяФайлаАктивногоРедактора" id="98">
 			<DataPath>ИмяФайлаАктивногоРедактора</DataPath>
+			<Visible>false</Visible>
 			<ReadOnly>true</ReadOnly>
 			<TitleLocation>None</TitleLocation>
 			<AutoMaxWidth>false</AutoMaxWidth>
+			<Hiperlink>true</Hiperlink>
 			<TextColor>#333399</TextColor>
-			<BorderColor>style:FormBackColor</BorderColor>
 			<Font ref="style:NormalTextFont" height="8" kind="StyleItem"/>
 			<ContextMenu name="ИмяФайлаАктивногоРедактораКонтекстноеМеню" id="99"/>
 			<ExtendedTooltip name="ИмяФайлаАктивногоРедактораРасширеннаяПодсказка" id="100"/>
-		</InputField>
+			<Events>
+				<Event name="Click">ИмяФайлаАктивногоРедактораНажатие</Event>
+			</Events>
+		</LabelField>
+		<UsualGroup name="ГруппаВсеКартинки" id="154">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа все картинки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа все картинки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВсеКартинкиРасширеннаяПодсказка" id="155"/>
+			<ChildItems>
+				<PictureDecoration name="КартинкаБыстрыйДоступДобавить" id="156">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка быстрый доступ добавить</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Abs>Picture.zip</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаБыстрыйДоступДобавитьКонтекстноеМеню" id="157"/>
+					<ExtendedTooltip name="КартинкаБыстрыйДоступДобавитьРасширеннаяПодсказка" id="158"/>
+				</PictureDecoration>
+				<PictureDecoration name="КартинкаЗакрытьДокумент" id="159">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка закрыть документ</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаЗакрытьДокументКонтекстноеМеню" id="160"/>
+					<ExtendedTooltip name="КартинкаЗакрытьДокументРасширеннаяПодсказка" id="161"/>
+				</PictureDecoration>
+				<PictureDecoration name="КартинкаРедактироватьСтроку" id="162">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка редактировать строку</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаРедактироватьСтрокуКонтекстноеМеню" id="163"/>
+					<ExtendedTooltip name="КартинкаРедактироватьСтрокуРасширеннаяПодсказка" id="164"/>
+				</PictureDecoration>
+				<PictureDecoration name="КартинкаЗакрыть" id="165">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка закрыть</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаЗакрытьКонтекстноеМеню" id="166"/>
+					<ExtendedTooltip name="КартинкаЗакрытьРасширеннаяПодсказка" id="167"/>
+				</PictureDecoration>
+				<PictureDecoration name="КартинкаПеречитатьФайл" id="168">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перечитать файл</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="КартинкаПеречитатьФайлКонтекстноеМеню" id="169"/>
+					<ExtendedTooltip name="КартинкаПеречитатьФайлРасширеннаяПодсказка" id="170"/>
+				</PictureDecoration>
+				<PictureDecoration name="КартинкаОткрытьВоВнешнемРедакторе" id="171">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыть во внешнем редакторе</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="КартинкаОткрытьВоВнешнемРедактореКонтекстноеМеню" id="172"/>
+					<ExtendedTooltip name="КартинкаОткрытьВоВнешнемРедактореРасширеннаяПодсказка" id="173"/>
+				</PictureDecoration>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -536,10 +660,11 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда исполняемый код выполнить на клиенте</v8:content>
+					<v8:content>Выполнить на клиенте</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаИсполняемыйКодВыполнитьНаКлиенте</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаИсполняемыйКодОткрыть" id="2">
 			<Title>
@@ -551,10 +676,11 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда исполняемый код открыть</v8:content>
+					<v8:content>Открыть</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаИсполняемыйКодОткрыть</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаИсполняемыйКодСохранитьКак" id="3">
 			<Title>
@@ -566,10 +692,11 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда исполняемый код сохранить как</v8:content>
+					<v8:content>Сохранить как</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаИсполняемыйКодСохранитьКак</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаИсполняемыйКодВыполнитьНаСервере" id="5">
 			<Title>
@@ -581,10 +708,11 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда исполняемый код выполнить на сервере</v8:content>
+					<v8:content>Выполнить на сервере</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаИсполняемыйКодВыполнитьНаСервере</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаФрагментОткрытьФорму" id="6">
 			<Title>
@@ -596,10 +724,11 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда фрагмент открыть форму</v8:content>
+					<v8:content>Открыть форму</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаФрагментОткрытьФорму</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаНовыйРедакторКода" id="7">
 			<Title>
@@ -611,10 +740,11 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда новый редактор кода</v8:content>
+					<v8:content>Новый редактор кода</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаНовыйРедакторКода</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаВыполнитьКод" id="8">
 			<Title>
@@ -630,6 +760,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаВыполнитьКод</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаИсполняемыйКодСохранить" id="4">
 			<Title>
@@ -641,10 +772,11 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда исполняемый код сохранить</v8:content>
+					<v8:content>Сохранить</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаИсполняемыйКодСохранить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаИсполняемыйКодСохранитьВсе" id="9">
 			<Title>
@@ -660,6 +792,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаИсполняемыйКодСохранитьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаИсполняемыйКодЗакрыть" id="10">
 			<Title>
@@ -671,10 +804,11 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда исполняемый код закрыть</v8:content>
+					<v8:content>Закрыть</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаИсполняемыйКодЗакрыть</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 </Form>
