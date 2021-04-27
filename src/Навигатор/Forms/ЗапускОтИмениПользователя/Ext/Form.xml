@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Запуск сеанса от имени пользователя</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="КомандаВыход" id="40">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Picture>
+					<xr:Abs>Picture.png</xr:Abs>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="КомандаВыходРасширеннаяПодсказка" id="41"/>
+			</Button>
+			<Button name="КомандаЗапуститьОтИмениПользователя" id="32">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.КомандаЗапуститьОтИмениПользователя</CommandName>
+				<ExtendedTooltip name="КомандаЗапуститьОтИмениПользователяРасширеннаяПодсказка" id="33"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="ИмяПользователяИБ" id="48">
+			<DataPath>ИмяПользователяИБ</DataPath>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ContextMenu name="ИмяПользователяИБКонтекстноеМеню" id="49"/>
+			<ExtendedTooltip name="ИмяПользователяИБРасширеннаяПодсказка" id="50"/>
+		</LabelField>
+		<CheckBoxField name="ВрДобавитьРольАдминистраторСистемы" id="42">
+			<DataPath>ВрДобавитьРольАдминистраторСистемы</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВрДобавитьРольАдминистраторСистемыКонтекстноеМеню" id="43"/>
+			<ExtendedTooltip name="ВрДобавитьРольАдминистраторСистемыРасширеннаяПодсказка" id="44"/>
+		</CheckBoxField>
+		<CheckBoxField name="ВрДобавитьРольПолныеПрава" id="45">
+			<DataPath>ВрДобавитьРольПолныеПрава</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВрДобавитьРольПолныеПраваКонтекстноеМеню" id="46"/>
+			<ExtendedTooltip name="ВрДобавитьРольПолныеПраваРасширеннаяПодсказка" id="47"/>
+		</CheckBoxField>
+		<InputField name="РежимЗапуска" id="53">
+			<DataPath>РежимЗапуска</DataPath>
+			<DropListButton>true</DropListButton>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Авто (/AppAutoCheckMode)</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">Авто</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Обычное приложение (/RunModeOrdinaryApplication)</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ОбычноеПриложение</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Управляемое приложение (/RunModeManagedApplication)</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">УправляемоеПриложение</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="РежимЗапускаКонтекстноеМеню" id="54"/>
+			<ExtendedTooltip name="РежимЗапускаРасширеннаяПодсказка" id="55"/>
+		</InputField>
+		<CheckBoxField name="ИзменятьПарольПользователя" id="56">
+			<DataPath>ИзменятьПарольПользователяПриЗапуске</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИзменятьПарольПользователяКонтекстноеМеню" id="57"/>
+			<ExtendedTooltip name="ИзменятьПарольПользователяРасширеннаяПодсказка" id="58"/>
+		</CheckBoxField>
+		<LabelDecoration name="ИзменятьПарольПользователяИнфо" id="59">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменять пароль пользователя при запуске на "123". После запуска возвращается исходное значение пароля.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ИзменятьПарольПользователяИнфоКонтекстноеМеню" id="60"/>
+			<ExtendedTooltip name="ИзменятьПарольПользователяИнфоРасширеннаяПодсказка" id="61"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаДпПараметры" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа дп параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаДпПараметрыРасширеннаяПодсказка" id="52"/>
+			<ChildItems>
+				<InputField name="ДпПараметрыЗапуска" id="25">
+					<DataPath>ДпПараметрыЗапуска</DataPath>
+					<TitleLocation>Top</TitleLocation>
+					<DropListButton>false</DropListButton>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ДпПараметрыЗапускаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ДпПараметрыЗапускаРасширеннаяПодсказка" id="27"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.Навигатор</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТонкийКлиент" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тонкий клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимЗапуска" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим запуска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДпПараметрыЗапуска" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные параметры запуска (параметры командной строки)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ДпПараметрыЗапуска</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИдПользователя" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ид пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаЗапускаСеанса" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВрДобавитьРольАдминистраторСистемы" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Временно добавить роль "Администратор системы"</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВрДобавитьРольПолныеПрава" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Временно добавить роль "Полные права"</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяПользователяИБ" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИзменятьПарольПользователяПриЗапуске" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменять пароль пользователя при запуске (временно)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаЗапуститьОтИмениПользователя" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить сеанс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить сеанс
+от имени пользователя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаЗапуститьОтИмениПользователя</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ИдПользователя">
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

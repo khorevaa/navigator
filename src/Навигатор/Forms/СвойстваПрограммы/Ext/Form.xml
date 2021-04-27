@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Навигатор</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Top</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<ShowTitle>false</ShowTitle>
+	<ShowCloseButton>false</ShowCloseButton>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Button name="КомандаВыход" id="25">
+			<Type>UsualButton</Type>
+			<Representation>Picture</Representation>
+			<CommandName>Form.Command.КомандаЗакрыть</CommandName>
+			<Picture>
+				<xr:Abs>Picture.png</xr:Abs>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<ExtendedTooltip name="КомандаВыходРасширеннаяПодсказка" id="26"/>
+		</Button>
+		<LabelDecoration name="НадписьНомерВерсии" id="17">
+			<Width>15</Width>
+			<Height>1</Height>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия 0.0.0</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="НадписьНомерВерсииКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="НадписьНомерВерсииРасширеннаяПодсказка" id="19"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаКИ" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа КИ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа КИ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКИРасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьАдресСтраницыРазработки" id="4">
+					<Width>15</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>infostart.ru</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ContextMenu name="НадписьАдресСтраницыРазработкиКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НадписьАдресСтраницыРазработкиРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="Click">НадписьАдресСтраницыРазработкиНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="НадписьСтраницаРазработкиНаGitHub" id="12">
+					<Width>15</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>github.com</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ContextMenu name="НадписьСтраницаРазработкиНаGitHubКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="НадписьСтраницаРазработкиНаGitHubРасширеннаяПодсказка" id="14"/>
+					<Events>
+						<Event name="Click">НадписьСтраницаРазработкиНаGitHubНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="НадписьПисьмоРазработчику" id="9">
+			<Width>15</Width>
+			<Height>1</Height>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>o.nikolaev@bk.ru</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="НадписьПисьмоРазработчикуКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="НадписьПисьмоРазработчикуРасширеннаяПодсказка" id="11"/>
+			<Events>
+				<Event name="Click">НадписьПисьмоРазработчикуНажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="НадписьПисьмоВСлужбуПоддержки" id="22">
+			<Width>15</Width>
+			<Height>1</Height>
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;b&gt;navigator.sprt@bk.ru&lt;/&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="НадписьПисьмоВСлужбуПоддержкиКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="НадписьПисьмоВСлужбуПоддержкиРасширеннаяПодсказка" id="24"/>
+			<Events>
+				<Event name="Click">НадписьПисьмоВСлужбуПоддержкиНажатие</Event>
+			</Events>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.Навигатор</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаЗакрыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЗакрыть</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

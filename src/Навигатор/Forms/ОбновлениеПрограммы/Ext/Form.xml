@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Обновление программы</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="СтраницыФормы" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыФормыРасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<Page name="СтраницаВводПинКода" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ввод пин кода</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ввод пин кода</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаВводПинКодаРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<CommandBar name="КмПнВводПинКода" id="53">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Км пн ввод пин кода</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Км пн ввод пин кода</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>12</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ExtendedTooltip name="КмПнВводПинКодаРасширеннаяПодсказка" id="54"/>
+							<ChildItems>
+								<Button name="КомандаВыход" id="55">
+									<Type>CommandBarButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.StandardCommand.Close</CommandName>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаВыходРасширеннаяПодсказка" id="56"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<InputField name="ПинКодПользователя" id="50">
+							<DataPath>ПинКодПользователя</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя пользователя + пароль для Яндекс-Диск</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Top</TitleLocation>
+							<Width>30</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<BackColor>web:LightYellow</BackColor>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ContextMenu name="ПинКодПользователяКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ПинКодПользователяРасширеннаяПодсказка" id="52"/>
+							<Events>
+								<Event name="OnChange">ПинКодПользователяПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Button name="КомандаПроверитьНаличиеОбновлений" id="60">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.КомандаПроверитьНаличиеОбновлений</CommandName>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="КомандаПроверитьНаличиеОбновленийРасширеннаяПодсказка" id="61"/>
+						</Button>
+						<LabelDecoration name="НадписьВводПинКодаИнформация" id="57">
+							<Width>35</Width>
+							<Height>10</Height>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;color #000080&gt;Для получения обновлений необходимо указать, 
+&lt;/&gt;&lt;color #000080&gt;имя пользователя и пароль Яндекс-Диска который
+&lt;/&gt;&lt;color #000080&gt;был указан при регистрации пин-кода после покупки.&lt;/&gt;&lt;color #000080&gt;
+&lt;/&gt;&lt;color #000080&gt;
+Код доступа, это строка вида: 
+"&lt;&lt;логин яндекс-диска&gt;&gt;~&lt;&lt;пароль яндекс-диска&gt;&gt;".
+
+&lt;/&gt;&lt;color #000080&gt;Например:
+&lt;/&gt;&lt;b&gt;&lt;color #000080&gt;"mydisk~123456"&lt;/&gt;&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьВводПинКодаИнформацияКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="НадписьВводПинКодаИнформацияРасширеннаяПодсказка" id="59"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОбновленияЕсть" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница обновления есть</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОбновленияЕстьРасширеннаяПодсказка" id="25"/>
+					<ChildItems>
+						<CommandBar name="КмПнОбновленияЕсть" id="31">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Км пн обновления есть</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Км пн обновления есть</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="КмПнОбновленияЕстьРасширеннаяПодсказка" id="32"/>
+							<ChildItems>
+								<Button name="КомандаОтмена" id="14">
+									<Type>CommandBarButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.StandardCommand.Close</CommandName>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отмена</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КомандаОтменаРасширеннаяПодсказка" id="15"/>
+								</Button>
+								<Button name="КомандаЗагрузитьНовуюВерсию" id="12">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.КомандаЗагрузитьНовуюВерсию</CommandName>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаЗагрузитьНовуюВерсиюРасширеннаяПодсказка" id="13"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<UsualGroup name="ГруппаИнформация" id="4">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа информация</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа информация</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="5"/>
+							<ChildItems>
+								<PictureDecoration name="КартинкаИнформация" id="1">
+									<Width>4</Width>
+									<Height>2</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Картинка информация</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Abs>Picture.zip</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="КартинкаИнформацияКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="КартинкаИнформацияРасширеннаяПодсказка" id="3"/>
+								</PictureDecoration>
+								<LabelDecoration name="НадписьДоступнаВерсия" id="6">
+									<Width>30</Width>
+									<Height>2</Height>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;fontsize 12&gt;Доступна новая версия Навигатора!&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НадписьДоступнаВерсияКонтекстноеМеню" id="7"/>
+									<ExtendedTooltip name="НадписьДоступнаВерсияРасширеннаяПодсказка" id="8"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="НадписьВерсияПодробно" id="9">
+							<Width>35</Width>
+							<Height>3</Height>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доступна версия &lt;b&gt;1.1.1&lt;/&gt;  У вас установлена версия &lt;b&gt;0.0.0&lt;/&gt;  Хотите загрузить новую версию?</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьВерсияПодробноКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="НадписьВерсияПодробноРасширеннаяПодсказка" id="11"/>
+						</LabelDecoration>
+						<SpreadSheetDocumentField name="ОписаниеИзменений" id="62">
+							<DataPath>ОписаниеИзменений</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<Width>60</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalScrollBar>true</VerticalScrollBar>
+							<ContextMenu name="ОписаниеИзмененийКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="ОписаниеИзмененийРасширеннаяПодсказка" id="64"/>
+						</SpreadSheetDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОбновленийНет" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нет</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница обновлений нет</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОбновленийНетРасширеннаяПодсказка" id="27"/>
+					<ChildItems>
+						<CommandBar name="КмПнОбновленийНет" id="33">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Км пн обновлений нет</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Км пн обновлений нет</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="КмПнОбновленийНетРасширеннаяПодсказка" id="34"/>
+							<ChildItems>
+								<Button name="КомандаЗакрыть" id="35">
+									<Type>CommandBarButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.StandardCommand.Close</CommandName>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаЗакрытьРасширеннаяПодсказка" id="36"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<LabelDecoration name="НадписьОбновленийНет" id="28">
+							<Width>35</Width>
+							<Height>2</Height>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;color #000080&gt;Обновлений нет. Вы пользуетесь самой свежей версией программы.&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьОбновленийНетКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="НадписьОбновленийНетРасширеннаяПодсказка" id="30"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="ГруппаСкрытыеКартинки" id="40">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа скрытые картинки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа скрытые картинки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСкрытыеКартинкиРасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<PictureDecoration name="КартинкаОшибка" id="42">
+					<Width>3</Width>
+					<Height>2</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка ошибка</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Abs>Picture.zip</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаОшибкаКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="КартинкаОшибкаРасширеннаяПодсказка" id="44"/>
+				</PictureDecoration>
+				<PictureDecoration name="КартинкаЗеленаяГалка" id="45">
+					<Width>3</Width>
+					<Height>2</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка зеленая галка</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Abs>Picture.zip</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаЗеленаяГалкаКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="КартинкаЗеленаяГалкаРасширеннаяПодсказка" id="47"/>
+				</PictureDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.Навигатор</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДанныеОбновления" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные обновления</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<Save>
+				<Field>ДанныеОбновления</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПинКодПользователя" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пин код пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПинКодПользователя</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОписаниеИзменений" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание изменений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаЗагрузитьНовуюВерсию" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить новую версию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЗагрузитьНовуюВерсию</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаПроверитьНаличиеОбновлений" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить наличие обновлений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить наличие обновлений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПроверитьНаличиеОбновлений</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>
