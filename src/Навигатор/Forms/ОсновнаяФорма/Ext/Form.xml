@@ -1531,137 +1531,165 @@
 																				</Button>
 																			</ChildItems>
 																		</CommandBar>
-																		<UsualGroup name="ГруппаНастройкиОсновные" id="582">
+																		<Pages name="СтраницыВсеНастройкиНавигатора" id="725">
 																			<Title>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
-																					<v8:content>Основные</v8:content>
+																					<v8:content>Страницы все настройки навигатора</v8:content>
 																				</v8:item>
 																			</Title>
 																			<ToolTip>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
-																					<v8:content>Группа настройки основные</v8:content>
+																					<v8:content>Страницы все настройки навигатора</v8:content>
 																				</v8:item>
 																			</ToolTip>
-																			<Group>Vertical</Group>
-																			<Representation>NormalSeparation</Representation>
-																			<ExtendedTooltip name="ГруппаНастройкиОсновныеРасширеннаяПодсказка" id="583"/>
+																			<HorizontalStretch>true</HorizontalStretch>
+																			<VerticalStretch>true</VerticalStretch>
+																			<ExtendedTooltip name="СтраницыВсеНастройкиНавигатораРасширеннаяПодсказка" id="726"/>
 																			<ChildItems>
-																				<CheckBoxField name="Настройки_ОтображатьКоличествоЭлементов" id="314">
-																					<DataPath>Объект.Настройки_ОтображатьКоличествоЭлементов</DataPath>
-																					<TitleLocation>Right</TitleLocation>
-																					<CheckBoxType>Auto</CheckBoxType>
-																					<ContextMenu name="Настройки_ОтображатьКоличествоЭлементовКонтекстноеМеню" id="315"/>
-																					<ExtendedTooltip name="Настройки_ОтображатьКоличествоЭлементовРасширеннаяПодсказка" id="316"/>
-																					<Events>
-																						<Event name="OnChange">Настройки_ОтображатьКоличествоЭлементовПриИзменении</Event>
-																					</Events>
-																				</CheckBoxField>
-																				<CheckBoxField name="Настройки_ОтображатьПанельИсторииПриОткрытии" id="317">
-																					<DataPath>Объект.Настройки_ОтображатьПанельИсторииПриОткрытии</DataPath>
-																					<TitleLocation>Right</TitleLocation>
-																					<CheckBoxType>Auto</CheckBoxType>
-																					<ContextMenu name="Настройки_ОтображатьПанельИсторииПриОткрытииКонтекстноеМеню" id="318"/>
-																					<ExtendedTooltip name="Настройки_ОтображатьПанельИсторииПриОткрытииРасширеннаяПодсказка" id="319"/>
-																					<Events>
-																						<Event name="OnChange">Настройки_ОтображатьПанельИсторииПриОткрытииПриИзменении</Event>
-																					</Events>
-																				</CheckBoxField>
-																				<CheckBoxField name="Настройки_ОтображатьПанельИзбранногоПриОткрытии" id="320">
-																					<DataPath>Объект.Настройки_ОтображатьПанельИзбранногоПриОткрытии</DataPath>
-																					<TitleLocation>Right</TitleLocation>
-																					<CheckBoxType>Auto</CheckBoxType>
-																					<ContextMenu name="Настройки_ОтображатьПанельИзбранногоПриОткрытииКонтекстноеМеню" id="321"/>
-																					<ExtendedTooltip name="Настройки_ОтображатьПанельИзбранногоПриОткрытииРасширеннаяПодсказка" id="322"/>
-																					<Events>
-																						<Event name="OnChange">Настройки_ОтображатьПанельИзбранногоПриОткрытииПриИзменении</Event>
-																					</Events>
-																				</CheckBoxField>
-																				<CheckBoxField name="Настройки_ПроверятьНаличиеОбновленийПриЗапуске" id="382">
-																					<DataPath>Объект.Настройки_ПроверятьНаличиеОбновленийПриЗапуске</DataPath>
-																					<TitleLocation>Right</TitleLocation>
-																					<CheckBoxType>Auto</CheckBoxType>
-																					<ContextMenu name="Настройки_ПроверятьНаличиеОбновленийПриЗапускеКонтекстноеМеню" id="383"/>
-																					<ExtendedTooltip name="Настройки_ПроверятьНаличиеОбновленийПриЗапускеРасширеннаяПодсказка" id="384"/>
-																				</CheckBoxField>
-																				<CheckBoxField name="Настройки_ПодтверждатьЗакрытиеНавигатора" id="545">
-																					<DataPath>Объект.Настройки_ПодтверждатьЗакрытиеНавигатора</DataPath>
-																					<TitleLocation>Right</TitleLocation>
-																					<CheckBoxType>Auto</CheckBoxType>
-																					<ContextMenu name="Настройки_ПодтверждатьЗакрытиеНавигатораКонтекстноеМеню" id="546"/>
-																					<ExtendedTooltip name="Настройки_ПодтверждатьЗакрытиеНавигатораРасширеннаяПодсказка" id="547"/>
-																				</CheckBoxField>
-																				<CheckBoxField name="Настройки_СортироватьОбъектыМетаданных" id="703">
-																					<DataPath>Объект.Настройки_СортироватьОбъектыМетаданных</DataPath>
-																					<TitleLocation>Right</TitleLocation>
-																					<CheckBoxType>Auto</CheckBoxType>
-																					<ContextMenu name="Настройки_СортироватьОбъектыМетаданныхКонтекстноеМеню" id="704"/>
-																					<ExtendedTooltip name="Настройки_СортироватьОбъектыМетаданныхРасширеннаяПодсказка" id="705"/>
-																				</CheckBoxField>
-																			</ChildItems>
-																		</UsualGroup>
-																		<UsualGroup name="ГруппаНастройкиРедакторОбъекта" id="586">
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Редактор объекта</v8:content>
-																				</v8:item>
-																			</Title>
-																			<ToolTip>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Группа настройки редактор объекта</v8:content>
-																				</v8:item>
-																			</ToolTip>
-																			<Group>Vertical</Group>
-																			<Representation>NormalSeparation</Representation>
-																			<ExtendedTooltip name="ГруппаНастройкиРедакторОбъектаРасширеннаяПодсказка" id="587"/>
-																			<ChildItems>
-																				<CheckBoxField name="Настройки_ПереключательНалиичияЗаписейЕстьЗаписи" id="579">
-																					<DataPath>Объект.Настройки_ПереключательНалиичияЗаписейЕстьЗаписи</DataPath>
+																				<Page name="СтраницаОсновныеНастройки" id="727">
 																					<Title>
 																						<v8:item>
 																							<v8:lang>ru</v8:lang>
-																							<v8:content>При открытии включать опцию "Есть записи"</v8:content>
+																							<v8:content>Основные</v8:content>
 																						</v8:item>
 																					</Title>
-																					<TitleLocation>Right</TitleLocation>
-																					<CheckBoxType>Auto</CheckBoxType>
-																					<ContextMenu name="Настройки_ПереключательНалиичияЗаписейЕстьЗаписиКонтекстноеМеню" id="580"/>
-																					<ExtendedTooltip name="Настройки_ПереключательНалиичияЗаписейЕстьЗаписиРасширеннаяПодсказка" id="581"/>
-																				</CheckBoxField>
+																					<ToolTip>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Страница основные настройки</v8:content>
+																						</v8:item>
+																					</ToolTip>
+																					<ExtendedTooltip name="СтраницаОсновныеНастройкиРасширеннаяПодсказка" id="728"/>
+																					<ChildItems>
+																						<CheckBoxField name="Настройки_ОтображатьКоличествоЭлементов" id="314">
+																							<DataPath>Объект.Настройки_ОтображатьКоличествоЭлементов</DataPath>
+																							<TitleLocation>Right</TitleLocation>
+																							<CheckBoxType>Auto</CheckBoxType>
+																							<ContextMenu name="Настройки_ОтображатьКоличествоЭлементовКонтекстноеМеню" id="315"/>
+																							<ExtendedTooltip name="Настройки_ОтображатьКоличествоЭлементовРасширеннаяПодсказка" id="316"/>
+																							<Events>
+																								<Event name="OnChange">Настройки_ОтображатьКоличествоЭлементовПриИзменении</Event>
+																							</Events>
+																						</CheckBoxField>
+																						<CheckBoxField name="Настройки_ОтображатьПанельИсторииПриОткрытии" id="317">
+																							<DataPath>Объект.Настройки_ОтображатьПанельИсторииПриОткрытии</DataPath>
+																							<TitleLocation>Right</TitleLocation>
+																							<CheckBoxType>Auto</CheckBoxType>
+																							<ContextMenu name="Настройки_ОтображатьПанельИсторииПриОткрытииКонтекстноеМеню" id="318"/>
+																							<ExtendedTooltip name="Настройки_ОтображатьПанельИсторииПриОткрытииРасширеннаяПодсказка" id="319"/>
+																							<Events>
+																								<Event name="OnChange">Настройки_ОтображатьПанельИсторииПриОткрытииПриИзменении</Event>
+																							</Events>
+																						</CheckBoxField>
+																						<CheckBoxField name="Настройки_ОтображатьПанельИзбранногоПриОткрытии" id="320">
+																							<DataPath>Объект.Настройки_ОтображатьПанельИзбранногоПриОткрытии</DataPath>
+																							<TitleLocation>Right</TitleLocation>
+																							<CheckBoxType>Auto</CheckBoxType>
+																							<ContextMenu name="Настройки_ОтображатьПанельИзбранногоПриОткрытииКонтекстноеМеню" id="321"/>
+																							<ExtendedTooltip name="Настройки_ОтображатьПанельИзбранногоПриОткрытииРасширеннаяПодсказка" id="322"/>
+																							<Events>
+																								<Event name="OnChange">Настройки_ОтображатьПанельИзбранногоПриОткрытииПриИзменении</Event>
+																							</Events>
+																						</CheckBoxField>
+																						<CheckBoxField name="Настройки_ПроверятьНаличиеОбновленийПриЗапуске" id="382">
+																							<DataPath>Объект.Настройки_ПроверятьНаличиеОбновленийПриЗапуске</DataPath>
+																							<TitleLocation>Right</TitleLocation>
+																							<CheckBoxType>Auto</CheckBoxType>
+																							<ContextMenu name="Настройки_ПроверятьНаличиеОбновленийПриЗапускеКонтекстноеМеню" id="383"/>
+																							<ExtendedTooltip name="Настройки_ПроверятьНаличиеОбновленийПриЗапускеРасширеннаяПодсказка" id="384"/>
+																						</CheckBoxField>
+																						<CheckBoxField name="Настройки_ПодтверждатьЗакрытиеНавигатора" id="545">
+																							<DataPath>Объект.Настройки_ПодтверждатьЗакрытиеНавигатора</DataPath>
+																							<TitleLocation>Right</TitleLocation>
+																							<CheckBoxType>Auto</CheckBoxType>
+																							<ContextMenu name="Настройки_ПодтверждатьЗакрытиеНавигатораКонтекстноеМеню" id="546"/>
+																							<ExtendedTooltip name="Настройки_ПодтверждатьЗакрытиеНавигатораРасширеннаяПодсказка" id="547"/>
+																						</CheckBoxField>
+																						<CheckBoxField name="Настройки_СортироватьОбъектыМетаданных" id="703">
+																							<DataPath>Объект.Настройки_СортироватьОбъектыМетаданных</DataPath>
+																							<TitleLocation>Right</TitleLocation>
+																							<CheckBoxType>Auto</CheckBoxType>
+																							<ContextMenu name="Настройки_СортироватьОбъектыМетаданныхКонтекстноеМеню" id="704"/>
+																							<ExtendedTooltip name="Настройки_СортироватьОбъектыМетаданныхРасширеннаяПодсказка" id="705"/>
+																						</CheckBoxField>
+																					</ChildItems>
+																				</Page>
+																				<Page name="СтраницаНастройкиРедактораОбъекта" id="729">
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Редактор объекта</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ToolTip>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Страница настройки редактора объекта</v8:content>
+																						</v8:item>
+																					</ToolTip>
+																					<ExtendedTooltip name="СтраницаНастройкиРедактораОбъектаРасширеннаяПодсказка" id="730"/>
+																					<ChildItems>
+																						<CheckBoxField name="Настройки_ПереключательНалиичияЗаписейЕстьЗаписи" id="579">
+																							<DataPath>Объект.Настройки_ПереключательНалиичияЗаписейЕстьЗаписи</DataPath>
+																							<Title>
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>При открытии включать опцию "Есть записи"</v8:content>
+																								</v8:item>
+																							</Title>
+																							<TitleLocation>Right</TitleLocation>
+																							<CheckBoxType>Auto</CheckBoxType>
+																							<ContextMenu name="Настройки_ПереключательНалиичияЗаписейЕстьЗаписиКонтекстноеМеню" id="580"/>
+																							<ExtendedTooltip name="Настройки_ПереключательНалиичияЗаписейЕстьЗаписиРасширеннаяПодсказка" id="581"/>
+																						</CheckBoxField>
+																					</ChildItems>
+																				</Page>
+																				<Page name="СтраницаДополнительныеНастройки" id="731">
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Дополнительные</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ToolTip>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Страница дополнительные настройки</v8:content>
+																						</v8:item>
+																					</ToolTip>
+																					<ExtendedTooltip name="СтраницаДополнительныеНастройкиРасширеннаяПодсказка" id="732"/>
+																					<ChildItems>
+																						<CheckBoxField name="Настройки_РежимРазработчика" id="538">
+																							<DataPath>Объект.Настройки_РежимРазработчика</DataPath>
+																							<TitleLocation>Right</TitleLocation>
+																							<CheckBoxType>Auto</CheckBoxType>
+																							<ContextMenu name="Настройки_РежимРазработчикаКонтекстноеМеню" id="539"/>
+																							<ExtendedTooltip name="Настройки_РежимРазработчикаРасширеннаяПодсказка" id="540"/>
+																							<Events>
+																								<Event name="OnChange">Настройки_РежимРазработчикаПриИзменении</Event>
+																							</Events>
+																						</CheckBoxField>
+																					</ChildItems>
+																				</Page>
+																				<Page name="СтраницаХранениеНастроек" id="733">
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Хранение</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ToolTip>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Страница хранение настроек</v8:content>
+																						</v8:item>
+																					</ToolTip>
+																					<ExtendedTooltip name="СтраницаХранениеНастроекРасширеннаяПодсказка" id="734"/>
+																				</Page>
 																			</ChildItems>
-																		</UsualGroup>
-																		<UsualGroup name="ГруппаНастройкиДополнительные" id="584">
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Дополнительные</v8:content>
-																				</v8:item>
-																			</Title>
-																			<ToolTip>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Группа настройки дополнительные</v8:content>
-																				</v8:item>
-																			</ToolTip>
-																			<Group>Vertical</Group>
-																			<Representation>NormalSeparation</Representation>
-																			<ExtendedTooltip name="ГруппаНастройкиДополнительныеРасширеннаяПодсказка" id="585"/>
-																			<ChildItems>
-																				<CheckBoxField name="Настройки_РежимРазработчика" id="538">
-																					<DataPath>Объект.Настройки_РежимРазработчика</DataPath>
-																					<TitleLocation>Right</TitleLocation>
-																					<CheckBoxType>Auto</CheckBoxType>
-																					<ContextMenu name="Настройки_РежимРазработчикаКонтекстноеМеню" id="539"/>
-																					<ExtendedTooltip name="Настройки_РежимРазработчикаРасширеннаяПодсказка" id="540"/>
-																					<Events>
-																						<Event name="OnChange">Настройки_РежимРазработчикаПриИзменении</Event>
-																					</Events>
-																				</CheckBoxField>
-																			</ChildItems>
-																		</UsualGroup>
+																		</Pages>
 																	</ChildItems>
 																</Page>
 																<Page name="СтраницаНастройкиНавигатораHTML" id="373">
